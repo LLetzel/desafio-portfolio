@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #171717;
+    --secondary-color: #11a3ae;
+    --text-color:#F9F9F9;
+}
+
+.dm-sans-font {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    background-color: var(--background-color);
+    width: 100%;
+    font-family: "DM Sans";
+}
+
+header {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: 20px auto;
+
+}
+
+h1 {
+    font-family: "DM Sans";
+    color: var(--text-color);
+}
+
+
+
+
+.links {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 45px;
+}
+
+.link{
+    color: var(--text-color);
+    color: #F9F9F9;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin: 5%;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#linkedin {
+    background: var(--secondary-color);
+}
+
+
+
+.oi {
+    color: #F9F9F9;
+
+font-family: "DM Sans";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.dev {
+    color: #828282;
+
+font-family: "DM Sans";
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+#lucasletzel{
+    border-radius: 137px;
+    width: 350px;
+    height: 420px;
+}
+
+/* .link:hover {
+
+} */
+
