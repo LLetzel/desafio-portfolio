@@ -1,56 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - LLetzel</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="./assets/icons8-portfólio-96.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - LLetzel</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" href="./assets/icons8-portfólio-96.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-</head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        
+    <body>
+        <header> 
+            <h1>Portfólio</h1>
     
-<body>
-    <header> 
-    <h1>Portfólio </h1>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="overlay"></label>
     
-    <label for="menu-toggle" class="menu-btn">
-        <img id="menu" src="./assets/menu.png" alt="">
-    </label>
-<!-- 
-    <input type="checkbox" id="menu-toggle">
-    <nav class="menu"> <nav class="section-sobremim"></nav>
-    <nav class="section-projetos"></nav>
-    <nav class="section-serviços"></nav>
-    <nav class="section-minhasskills"></nav></nav> -->
-   
+            <nav class="sidebar-menu">
+                <label for="menu-toggle" class="close-btn">×</label>
+                <h3>Menu</h3>
+                <ul>
+                    <li><a class="link" href="#sobre">Sobre mim</a></li>
+                    <li><a class="link" href="#projetos">Projetos</a></li>
+                    <li><a class="link" href="#servicos">Serviços</a></li>
+                    <li><a class="link" href="#skills">Minhas Skills</a></li>
+                </ul>
+            </nav>
+    
+            <label for="menu-toggle" class="menu-btn">
+                <img id="menu" src="./assets/menu.png" alt="Abrir menu">
+            </label>
+    
+            <div class="links">
+                <a class="link" href="#sobre">Sobre mim</a>
+                <a class="link" href="#projetos">Projetos</a>
+                <a class="link" href="#servicos">Serviços</a>
+                <a class="link" href="#skills">Minhas Skills</a>
+            </div>
+        </header>
+        <section class="apresentacao">
 
+        <div class="informacoes">
+            <h1 class="Oi"> Olá! <br>
+                Eu sou Lucas Letzel
+            </h1>
+            <p class="dev">Desenvolvedor Full-Stack</p>
 
-    <div class="links">
-        <a class="link" href="">Sobre mim</a>
-        <a class="link" href="">Projetos</a>
-        <a class="link" href="">Serviços</a>
-        <a class="link" href="">Minhas Skills</a>
-    </div>
-    </header>
+            <div class="btns">
+            <a id="linkedin" href="https://www.linkedin.com/in/lucasletzel/">LinkedIn</a>
+            <a id="contato" href="">Entrar em contato</a>
+        </div>
+        </div>
 
-    <section class="apresentacao">
+        <img id="lucasletzel" src="./assets/Lucas-Letzel.jpeg" alt="Lucas Letzel img">
+        </section>
 
-    <div class="informacoes">
-        <h1 class="Oi"> Olá! <br>
-            Eu sou Lucas Letzel
-        </h1>
-        <p class="dev">Desenvolvedor Full-Stack</p>
+        <section id="sobre" class="section-sobre" >
+            <h2>Sobre Mim</h2>
+            <p class="psobremim">Com entusiasmo e dedicação, busco uma oportunidade para aplicar meus conhecimentos em desenvolvimento de software e contribuir para projetos inovadores. Atualmente cursando Desenvolvimento de sistemas no SENAI, possuo sólida base em linguagens de programação como Python, JavaScript, além de experiência em desenvolvimento web e cloud computing.
+                Sou proativo e curioso, sempre buscando aprimorar minhas habilidades e me manter atualizado com as últimas tendências do mercado. Possuo certificações em Google Cloud e Python, Arduino, além de muitas outras linguagens, demonstrando meu compromisso com a excelência técnica
+            </p>
 
-        <div class="btns">
-        <a id="linkedin" href="https://www.linkedin.com/in/lucasletzel/">LinkedIn</a>
-        <a id="contato" href="">Entrar em contato</a>
-    </div>
-    </div>
+            <DIV class="badges">
+                <div class="linkedin">
+                    <img src="./assets/Linkedin.svg" alt="" class="svglinkedin">
+                    <h3>Linkedin</h3>
+                    <p>in/lucasletzel</p>
+                </div>
+                <div class="email">
+                    <img src="./assets/Email-2.svg" alt="" class="svgemail">
+                    <h3>Email</h3>
+                    <p>lucasdiasletzel@gmail.com</p>
+                </div>
 
-    <img id="lucasletzel" src="./assets/Lucas-Letzel.jpeg" alt="Lucas Letzel img">
-    </section>
-</body>
-</html>
+                <div class="github">
+                    <img src="./assets/github.svg" alt="" class="svggithub">
+                    <h3>Github</h3>
+                    <p>LLetzel</p>
+                </div>
+            </DIV>
+
+        </section>
+        <!-- <section id="projetos" class="section">Projetos</section>
+        <section id="servicos" class="section">Serviços</section>
+        <section id="skills" class="section">Minhas Skills</section> -->
+    </body>
+    </html>
