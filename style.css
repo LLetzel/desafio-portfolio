@@ -70,12 +70,11 @@ h1 {
 .informacoes {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    width: 35%;
 }
 
-#linkedin {
-    background: var(--secondary-color);
-}
+
 
 
 
@@ -105,7 +104,91 @@ line-height: normal;
     height: 420px;
 }
 
-/* .link:hover {
+.btns {
+    display: flex;
+    padding-block: 10px;
+    gap: 24px;
+}
 
-} */
+#linkedin {
+    background: var(--secondary-color);
+    color: black;
+    text-decoration: none;
+    padding-inline: 25px;
+    padding-block: 8px;
+}
 
+#contato {
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid #333;
+    padding-inline: 25px;
+    padding-block: 8px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+#menu {
+    height: 40px;
+    width: 40px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    header {
+        display: flex;
+        justify-content:space-between;
+        width: 90%;
+    }
+
+    .links {
+        display: none;
+    }
+
+    #lucasletzel {
+        display: none;
+    }
+
+    .informacoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 60%;
+    }
+
+    #linkedin {
+        background: var(--secondary-color);
+        color: black;
+        text-decoration: none;
+        padding-inline: 20px;
+        padding-block: 10px;
+    }
+    
+    #contato {
+        text-decoration: none;
+        color: var(--text-color);
+        border: 1px solid #333;
+        padding-inline: 20px;
+        padding-block: 10px;
+    }
+    
+    .btns {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+
+    
+}
