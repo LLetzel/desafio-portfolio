@@ -1,24 +1,34 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio - LLetzel</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="shortcut icon" href="./assets/icons8-portfólio-96.png" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
 
-        <link rel="stylesheet" href="style.css">
-    </head>
-        
-    <body>
-        <header> 
-            <h1>Portfólio</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - LLetzel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./assets/icons8-portfólio-96.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="Portfolio profissional de Lucas Letzel - Desenvolvedor Full-Stack">
+    <meta name="keywords" content="desenvolvedor, full-stack, portfolio, web development">
+    <meta name="theme-color" content="#171717">
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>    
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id="particles-js"></div>
+<body>
     
+    <header>
+        <div>
+            <h1>Portfólio</h1>
+
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="overlay"></label>
-    
+
             <nav class="sidebar-menu">
                 <label for="menu-toggle" class="close-btn">×</label>
                 <h3>Menu</h3>
@@ -29,19 +39,22 @@
                     <li><a class="link" href="#skills">Minhas Skills</a></li>
                 </ul>
             </nav>
-    
+
             <label for="menu-toggle" class="menu-btn">
                 <img id="menu" src="./assets/menu.png" alt="Abrir menu">
             </label>
-    
+
             <div class="links">
                 <a class="link" href="#sobre">Sobre mim</a>
                 <a class="link" href="#projetos">Projetos</a>
                 <a class="link" href="#servicos">Serviços</a>
                 <a class="link" href="#skills">Minhas Skills</a>
             </div>
-        </header>
-        <section class="apresentacao">
+        </div>
+    </header>
+
+    <div class="container-content">
+    <section class="apresentacao">
 
         <div class="informacoes">
             <h1 class="Oi"> Olá! <br>
@@ -50,93 +63,267 @@
             <p class="dev">Desenvolvedor Full-Stack</p>
 
             <div class="btns">
-            <a id="linkedin" href="https://www.linkedin.com/in/lucasletzel/">LinkedIn</a>
-            <a id="contato" href="">Entrar em contato</a>
+                <a aria-label="LinkedIn Profile" id="linkedin" target="_blank" href="https://www.linkedin.com/in/lucasletzel/">LinkedIn</a>
+                <a aria-label="Contact Me" id="contato" href="">Entrar em contato</a>
+            </div>
         </div>
-        </div>
 
-        <img id="lucasletzel" src="./assets/Lucas-Letzel.jpeg" alt="Lucas Letzel img">
-        </section>
+        <img loading="lazy" id="lucasletzel" src="./assets/Lucas-Letzel.jpeg" alt="Lucas Letzel img">
+    </section>
 
-        <section id="sobre" class="section-sobre" >
-            <h2>Sobre Mim</h2>
-            <p class="psobremim">Com entusiasmo e dedicação, busco uma oportunidade para aplicar meus conhecimentos em desenvolvimento de software e contribuir para projetos inovadores. Atualmente cursando Desenvolvimento de sistemas no SENAI, possuo sólida base em linguagens de programação como Python, JavaScript, além de experiência em desenvolvimento web e cloud computing.
-                Sou proativo e curioso, sempre buscando aprimorar minhas habilidades e me manter atualizado com as últimas tendências do mercado. Possuo certificações em Google Cloud e Python, Arduino, além de muitas outras linguagens, demonstrando meu compromisso com a excelência técnica
-            </p>
+    <section id="sobre" class="section-sobre">
+        <h2>Sobre Mim</h2>
+        <p class="psobremim">Com entusiasmo e dedicação, busco uma oportunidade para aplicar meus conhecimentos em
+            desenvolvimento de software e contribuir para projetos inovadores. Atualmente cursando Desenvolvimento de
+            sistemas no SENAI, possuo sólida base em linguagens de programação como Python, JavaScript, além de
+            experiência em desenvolvimento web e cloud computing.
+            Sou proativo e curioso, sempre buscando aprimorar minhas habilidades e me manter atualizado com as últimas
+            tendências do mercado. Possuo certificações em Google Cloud e Python, Arduino, além de muitas outras
+            linguagens, demonstrando meu compromisso com a excelência técnica
+        </p>
 
-            <div class="badges">
-                <div class="linkedin">
-                    <img src="./assets/Linkedin.svg" alt="" class="svglinkedin">
-                    <h3>Linkedin</h3>
-                    <p>in/lucasletzel</p>
-                </div>
-                <div class="email">
-                    <img src="./assets/Email-2.svg" alt="" class="svgemail">
-                    <h3>Email</h3>
-                    <p>lucasdiasletzel@gmail.com</p>
-                </div>  
-
-                <div class="github">
-                    <img src="./assets/github.svg" alt="" class="svggithub">
-                    <h3>Github</h3>
-                    <p>LLetzel</p>
-                </div>
+        <div class="badges">
+            <div class="linkedin">
+                <img src="./assets/Linkedin.svg" alt="" class="svglinkedin">
+                <h3>Linkedin</h3>
+                <p>in/lucasletzel</p>
+            </div>
+            <div class="email">
+                <img src="./assets/Email-2.svg" alt="" class="svgemail">
+                <h3>Email</h3>
+                <p>lucasdiasletzel@gmail.com</p>
             </div>
 
-        </section>
+            <div class="github">
+                <img src="./assets/github.svg" alt="" class="svggithub">
+                <h3>Github</h3>
+                <p>LLetzel</p>
+            </div>
+        </div>
 
-        <section id="projetos" class="section-projetos">
-            <h2>Projetos</h2>
-            <div class="projetos">
+    </section>
+
+    <section id="projetos" class="section-projetos">
+        <h2>Projetos</h2>
+        <div class="projetos">
             <a href="https://lletzel.github.io/Age-calculator-app/" target="_blank" class="card-projeto">
-                <img class="cardimg" src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Flletzel.github.io%2FAge-calculator-app/?w=600" alt="Preview do site">
-                
+                <img class="cardimg"
+                    src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Flletzel.github.io%2FAge-calculator-app/?w=600"
+                    alt="Preview do site">
+
                 <h1>Age-calculator</h1>
                 <p>Tecnologias: HTML, CSS e JavaScript</p>
             </a>
             <a href="https://lletzel.github.io/cronometro-js/" target="_blank" class="card-projeto">
-                <img class="cardimg" src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Flletzel.github.io%2Fcronometro-js/?w=600" alt="Preview do site">
-                
+                <img class="cardimg"
+                    src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Flletzel.github.io%2Fcronometro-js/?w=600"
+                    alt="Preview do site">
+
                 <h1>Cronômetro</h1>
                 <p>Tecnologias: HTML, CSS e JavaScript</p>
             </a>
             <a href="https://lletzel.github.io/calculadora-js/" target="_blank" class="card-projeto">
-                <img class="cardimg" src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Flletzel.github.io%2Fcalculadora-js/?w=600" alt="Preview do site">
-                
+                <img class="cardimg"
+                    src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Flletzel.github.io%2Fcalculadora-js/?w=600"
+                    alt="Preview do site">
+
                 <h1>Petfinder</h1>
                 <p>Tecnologias: HTML, CSS e JavaScript</p>
             </a>
+        </div>
+    </section>
+
+    <section id="servicos" class="section-servicos">
+        <h2>Serviços</h2>
+        <div class="servicos">
+            <div class="servico">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <path d="M37.3333 42L51.3333 28L37.3333 14" stroke="#11A3AE" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M18.6667 14L4.66675 28L18.6667 42" stroke="#11A3AE" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <h3 class="servico-text">Desenvolvimento de software</h3>
             </div>
-        </section>
-        
-        <section id="servicos" class="section">
-            <h2>Serviços</h2>
-            <div class="servicos">
-                <div class="servico">
-                    <img src="./assets/Desenvolvimento-de-software.svg" alt="Desenvolvimento de software">
-                    <h3>Desenvolvimento de software</h3>
-                    <p>Desenvolvimento de aplicações web e mobile, utilizando as melhores práticas de programação e as tecnologias mais modernas do mercado.</p>
-                </div>
-                <div class="servico">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
-                        <path d="M37.3333 42L51.3333 28L37.3333 14" stroke="#11A3AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M18.6667 14L4.66675 28L18.6667 42" stroke="#11A3AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    <h3>UI Designer</h3>
-                    <p>Implementação de soluções em nuvem, garantindo escalabilidade, segurança e alta disponibilidade para os seus projetos.</p>
-                </div>
-                <div class="servico">
-                    <img src="./assets/Consultoria.svg" alt="Consultoria">
-                    <h3>Consultoria</h3>
-                    <p>Consultoria em tecnologia da informação, auxiliando na tomada de decisões estratégicas e na resolução de problemas técnicos.</p>
-                </div>
+            <div class="servico">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <path
+                        d="M11.6667 12.8333C11.6667 10.6674 12.5272 8.59013 14.0587 7.05859C15.5903 5.52704 17.6675 4.66663 19.8334 4.66663H28.0001V21H19.8334C17.6675 21 15.5903 20.1395 14.0587 18.608C12.5272 17.0765 11.6667 14.9992 11.6667 12.8333Z"
+                        stroke="#11A3AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M28 4.66663H36.1667C37.2391 4.66663 38.3011 4.87786 39.2919 5.28828C40.2827 5.69869 41.183 6.30024 41.9414 7.05859C42.6997 7.81693 43.3013 8.71722 43.7117 9.70804C44.1221 10.6989 44.3333 11.7608 44.3333 12.8333C44.3333 13.9058 44.1221 14.9677 43.7117 15.9585C43.3013 16.9494 42.6997 17.8497 41.9414 18.608C41.183 19.3663 40.2827 19.9679 39.2919 20.3783C38.3011 20.7887 37.2391 21 36.1667 21H28V4.66663Z"
+                        stroke="#11A3AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M28 29.1667C28 28.0942 28.2112 27.0322 28.6216 26.0414C29.0321 25.0506 29.6336 24.1503 30.392 23.392C31.1503 22.6336 32.0506 22.0321 33.0414 21.6216C34.0322 21.2112 35.0942 21 36.1667 21C37.2391 21 38.3011 21.2112 39.2919 21.6216C40.2827 22.0321 41.183 22.6336 41.9414 23.392C42.6997 24.1503 43.3013 25.0506 43.7117 26.0414C44.1221 27.0322 44.3333 28.0942 44.3333 29.1667C44.3333 30.2391 44.1221 31.3011 43.7117 32.2919C43.3013 33.2827 42.6997 34.183 41.9414 34.9414C41.183 35.6997 40.2827 36.3013 39.2919 36.7117C38.3011 37.1221 37.2391 37.3333 36.1667 37.3333C35.0942 37.3333 34.0322 37.1221 33.0414 36.7117C32.0506 36.3013 31.1503 35.6997 30.392 34.9414C29.6336 34.183 29.0321 33.2827 28.6216 32.2919C28.2112 31.3011 28 30.2391 28 29.1667V29.1667Z"
+                        stroke="#11A3AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M11.6667 45.5C11.6667 43.3341 12.5272 41.2569 14.0587 39.7253C15.5903 38.1938 17.6675 37.3334 19.8334 37.3334H28.0001V45.5C28.0001 47.666 27.1397 49.7432 25.6081 51.2747C24.0766 52.8063 21.9994 53.6667 19.8334 53.6667C17.6675 53.6667 15.5903 52.8063 14.0587 51.2747C12.5272 49.7432 11.6667 47.666 11.6667 45.5Z"
+                        stroke="#11A3AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M11.6667 29.1667C11.6667 27.0007 12.5272 24.9235 14.0587 23.392C15.5903 21.8604 17.6675 21 19.8334 21H28.0001V37.3333H19.8334C17.6675 37.3333 15.5903 36.4729 14.0587 34.9414C12.5272 33.4098 11.6667 31.3326 11.6667 29.1667Z"
+                        stroke="#11A3AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <h3 class="servico-text">UI Designer</h3>
+
+            </div>
+            <div class="servico">
+                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+                    <path
+                        d="M39.6668 4.66663H16.3334C13.7561 4.66663 11.6667 6.75596 11.6667 9.33329V46.6666C11.6667 49.244 13.7561 51.3333 16.3334 51.3333H39.6668C42.2441 51.3333 44.3334 49.244 44.3334 46.6666V9.33329C44.3334 6.75596 42.2441 4.66663 39.6668 4.66663Z"
+                        stroke="#11A3AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M28 42H28.0233" stroke="#11A3AE" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <h3 class="servico-text">Sites Responsivos</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="skills" class="section-minhasskills">
+        <h2>Minhas Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 80 80" fill="none">
+                    <path
+                        d="M4.72668 0L11.1467 72L39.9567 80L68.8417 71.99L75.2717 0H4.73168H4.72668ZM61.2967 23.55H27.5067L28.3117 32.595H60.4967L58.0717 59.705L39.9567 64.725L21.8667 59.705L20.6317 45.835H29.4967L30.1267 52.885L39.9617 55.535L39.9817 55.53L49.8217 52.875L50.8417 41.425H20.2367L17.8567 14.72H62.0917L61.3017 23.55H61.2967Z"
+                        fill="#11A3AE" />
+                </svg>
+            </div>
+            <div class="skill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 80 80" fill="none">
+                    <g clip-path="url(#clip0_1_182)">
+                        <path
+                            d="M64.5533 71.41L70.93 0H0L0.0833333 0.926667L6.36667 71.42L6.42 72.0067L35.1967 80H35.65L64.4933 72L64.5467 71.4133L64.5533 71.41ZM35.5267 15.5967H56.1367L55.5167 22.7967L35.1833 31.8367L35.5233 33.4633H54.6033L52.4067 58.6333L35.4533 63.3333L18.5067 58.64L17.44 46.5867H24.4167L24.9767 52.6967L25.03 53.29L35.3133 56.0233H35.7567L45.9267 53.1967L45.9767 52.6067L46.9367 41.32L47.0133 40.4H16.8567L16.2233 33.1567L37.2533 24.1533L36.92 22.52H15.32L14.7033 15.5867H35.5033L35.5267 15.5967Z"
+                            fill="#11A3AE" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_182">
+                            <rect width="80" height="80" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="skill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 80 80" fill="none">
+                    <g clip-path="url(#clip0_1_186)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 0H80V80H0V0ZM61.1567 67.0667C57.4467 67.0667 55.35 65.1333 53.74 62.5L47.63 66.05C49.8367 70.41 54.3467 73.7367 61.33 73.7367C68.47 73.7367 73.7867 70.03 73.7867 63.26C73.7867 56.9833 70.18 54.1933 63.7933 51.45L61.9133 50.6467C58.6867 49.2467 57.29 48.3367 57.29 46.08C57.29 44.2567 58.69 42.86 60.89 42.86C63.0467 42.86 64.4367 43.77 65.7267 46.08L71.58 42.3233C69.1033 37.9667 65.67 36.3033 60.89 36.3033C54.1767 36.3033 49.88 40.5967 49.88 46.2367C49.88 52.3533 53.48 55.25 58.9067 57.56L60.7867 58.3667C64.2167 59.8667 66.26 60.78 66.26 63.3567C66.26 65.51 64.27 67.0667 61.1567 67.0667ZM32.0233 67.0167C29.44 67.0167 28.3633 65.25 27.1833 63.15L21.0633 66.8567C22.8367 70.61 26.3233 73.7233 32.34 73.7233C39.0033 73.7233 43.5667 70.18 43.5667 62.3967V36.73H36.05V62.2967C36.05 66.0533 34.49 67.0167 32.02 67.0167H32.0233Z"
+                            fill="#11A3AE" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_186">
+                            <rect width="80" height="80" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
             </div>
 
-        </section>
+            <div class="skill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 80 80" fill="none">
+                    <path
+                        d="M17.6667 18.3332C17.6667 15.5042 18.7906 12.7911 20.7909 10.7907C22.7913 8.79031 25.5044 7.6665 28.3334 7.6665H39.0001V28.9998H28.3334C25.5044 28.9998 22.7913 27.876 20.7909 25.8756C18.7906 23.8753 17.6667 21.1621 17.6667 18.3332Z"
+                        fill="#11A3AE" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M41 7.6665H51.6667C53.0674 7.6665 54.4545 7.94241 55.7486 8.47846C57.0428 9.01451 58.2187 9.80021 59.2091 10.7907C60.1996 11.7812 60.9853 12.9571 61.5214 14.2512C62.0574 15.5454 62.3333 16.9324 62.3333 18.3332C62.3333 19.7339 62.0574 21.121 61.5214 22.4151C60.9853 23.7093 60.1996 24.8852 59.2091 25.8756C58.2187 26.8661 57.0428 27.6518 55.7486 28.1879C54.4545 28.7239 53.0674 28.9998 51.6667 28.9998H41V7.6665Z"
+                        fill="#11A3AE" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M41 41.6667C41 40.2659 41.2759 38.8789 41.812 37.5847C42.348 36.2906 43.1337 35.1147 44.1242 34.1242C45.1147 33.1337 46.2906 32.348 47.5847 31.812C48.8789 31.2759 50.2659 31 51.6667 31C53.0674 31 54.4545 31.2759 55.7486 31.812C57.0428 32.348 58.2187 33.1337 59.2091 34.1242C60.1996 35.1147 60.9853 36.2906 61.5214 37.5847C62.0574 38.8789 62.3333 40.2659 62.3333 41.6667C62.3333 43.0674 62.0574 44.4545 61.5214 45.7486C60.9853 47.0428 60.1996 48.2187 59.2091 49.2091C58.2187 50.1996 57.0428 50.9853 55.7486 51.5214C54.4545 52.0574 53.0674 52.3333 51.6667 52.3333C50.2659 52.3333 48.8789 52.0574 47.5847 51.5214C46.2906 50.9853 45.1147 50.1996 44.1242 49.2091C43.1337 48.2187 42.348 47.0428 41.812 45.7486C41.2759 44.4545 41 43.0674 41 41.6667Z"
+                        fill="#11A3AE" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M17.6667 65.0002C17.6667 62.1712 18.7906 59.4581 20.7909 57.4577C22.7913 55.4573 25.5044 54.3335 28.3334 54.3335H39.0001V65.0002C39.0001 67.8291 37.8763 70.5422 35.8759 72.5426C33.8755 74.543 31.1624 75.6668 28.3334 75.6668C25.5044 75.6668 22.7913 74.543 20.7909 72.5426C18.7906 70.5422 17.6667 67.8291 17.6667 65.0002Z"
+                        fill="#11A3AE" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path
+                        d="M17.6667 41.6667C17.6667 38.8377 18.7906 36.1246 20.7909 34.1242C22.7913 32.1238 25.5044 31 28.3334 31H39.0001V52.3333H28.3334C25.5044 52.3333 22.7913 51.2095 20.7909 49.2091C18.7906 47.2088 17.6667 44.4956 17.6667 41.6667Z"
+                        fill="#11A3AE" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
 
+            <div class="skill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 80 80" fill="none">
+                    <path
+                        d="M80 38.9633C80 33.6633 73.3633 28.6399 63.1867 25.5266C65.5367 15.1566 64.4933 6.90325 59.8933 4.25992C58.7787 3.63565 57.5172 3.32143 56.24 3.34992V6.98325C56.99 6.98325 57.5933 7.13325 58.1 7.40992C60.3167 8.68325 61.28 13.5233 60.53 19.7533C60.35 21.2866 60.0567 22.8999 59.6967 24.5466C56.2888 23.7254 52.83 23.1318 49.3433 22.7699C47.2662 19.9042 45 17.1804 42.56 14.6166C47.8767 9.67659 52.8667 6.96992 56.26 6.96992V3.33325C51.7733 3.33325 45.9033 6.52992 39.9667 12.0733C34.0333 6.56659 28.16 3.39992 23.6767 3.39992V7.03325C27.0533 7.03325 32.06 9.72658 37.3767 14.6333C35.0933 17.0333 32.81 19.7533 30.64 22.7699C27.1461 23.1278 23.6812 23.727 20.27 24.5633C19.8933 22.9333 19.6167 21.3533 19.42 19.8366C18.6533 13.6033 19.6 8.76325 21.8033 7.47659C22.29 7.18325 22.9267 7.04992 23.6767 7.04992V3.41659C22.31 3.41659 21.0667 3.70992 19.9933 4.32659C15.41 6.96992 14.3833 15.2033 16.7467 25.5433C6.60333 28.6766 0 33.6799 0 38.9633C0 44.2633 6.63667 49.2866 16.8133 52.3966C14.4633 62.7699 15.5067 71.0233 20.1067 73.6633C21.1667 74.2833 22.4067 74.5766 23.7733 74.5766C28.26 74.5766 34.13 71.3799 40.0667 65.8366C46 71.3466 51.87 74.5099 56.3567 74.5099C57.6437 74.5371 58.9148 74.2219 60.04 73.5966C64.6233 70.9566 65.65 62.7233 63.2867 52.3833C73.3967 49.2699 80 44.2466 80 38.9633ZM58.7667 28.0866C58.1333 30.2661 57.3992 32.4151 56.5667 34.5266C55.2039 31.8758 53.7075 29.2958 52.0833 26.7966C54.4 27.1399 56.6333 27.5633 58.77 28.0866H58.7667ZM51.3 45.4533C50.03 47.6533 48.7233 49.7433 47.37 51.6833C42.4775 52.1145 37.5568 52.1201 32.6633 51.6999C29.8565 47.6905 27.4018 43.4458 25.3267 39.0133C27.3986 34.5703 29.8429 30.3106 32.6333 26.2799C37.5246 25.8478 42.4442 25.8411 47.3367 26.2599C48.69 28.1999 50.0133 30.2733 51.2833 32.4599C52.5233 34.5933 53.65 36.7599 54.6767 38.9466C53.6386 41.1598 52.5121 43.3304 51.3 45.4533ZM56.5667 43.3333C57.4467 45.5166 58.2 47.7033 58.8167 49.8233C56.6833 50.3466 54.43 50.7866 52.1 51.1266C53.7175 48.6047 55.2082 46.0036 56.5667 43.3333ZM40.0333 60.7333C38.5167 59.1666 37 57.4233 35.5 55.5133C36.9667 55.5799 38.4667 55.6299 39.9833 55.6299C41.5167 55.6299 43.0333 55.5966 44.5167 55.5133C43.05 57.4233 41.5333 59.1666 40.0333 60.7333ZM27.9 51.1266C25.6525 50.8009 23.4212 50.3716 21.2133 49.8399C21.8167 47.7366 22.5667 45.5666 23.4133 43.3999C24.0833 44.6999 24.7867 46.0066 25.5533 47.3133C26.32 48.6166 27.1 49.8899 27.9 51.1266ZM39.95 17.1933C41.4667 18.7599 42.9833 20.5033 44.4833 22.4133C43.0167 22.3466 41.5167 22.2966 40 22.2966C38.4667 22.2966 36.95 22.3299 35.4667 22.4133C36.9333 20.5033 38.45 18.7599 39.95 17.1933ZM27.8833 26.7999C26.2662 29.3164 24.7755 31.9118 23.4167 34.5766C22.5607 32.4515 21.8098 30.2855 21.1667 28.0866C23.3 27.5799 25.5533 27.1399 27.8833 26.7999ZM13.1267 47.2133C7.35333 44.7533 3.62 41.5233 3.62 38.9633C3.62 36.4033 7.35333 33.1566 13.1267 30.7133C14.5267 30.1099 16.06 29.5699 17.6433 29.0666C18.5733 32.2599 19.7967 35.5866 21.31 38.9966C19.8812 42.2039 18.6729 45.5049 17.6933 48.8766C16.1448 48.3971 14.6208 47.842 13.1267 47.2133ZM21.9 70.5133C19.6833 69.2466 18.72 64.3999 19.47 58.1733C19.65 56.6399 19.9433 55.0233 20.3033 53.3766C23.4967 54.1599 26.9867 54.7633 30.6567 55.1566C32.7339 58.0222 35.0001 60.746 37.44 63.3099C32.1233 68.2499 27.1333 70.9566 23.74 70.9566C23.0998 70.9636 22.4678 70.8124 21.9 70.5166V70.5133ZM60.58 58.0899C61.3467 64.3199 60.4 69.1633 58.1967 70.4499C57.71 70.7433 57.0733 70.8733 56.3233 70.8733C52.9467 70.8733 47.94 68.1833 42.6233 63.2733C44.9067 60.8799 47.19 58.1566 49.36 55.1399C52.8539 54.782 56.3188 54.1828 59.73 53.3466C60.1067 54.9933 60.3967 56.5733 60.58 58.0899ZM66.8567 47.2133C65.4567 47.8166 63.9233 48.3566 62.34 48.8599C61.3432 45.471 60.1182 42.1534 58.6733 38.9299C60.1733 35.5399 61.3767 32.2299 62.29 29.0499C63.9067 29.5533 65.4367 30.1099 66.8733 30.7133C72.6467 33.1733 76.38 36.4033 76.38 38.9633C76.3633 41.5233 72.63 44.7699 66.8567 47.2133Z"
+                        fill="#11A3AE" />
+                    <path
+                        d="M39.9829 46.4162C41.9596 46.4162 43.8554 45.6309 45.2532 44.2332C46.651 42.8354 47.4362 40.9396 47.4362 38.9629C47.4362 36.9861 46.651 35.0903 45.2532 33.6926C43.8554 32.2948 41.9596 31.5095 39.9829 31.5095C38.0061 31.5095 36.1103 32.2948 34.7126 33.6926C33.3148 35.0903 32.5295 36.9861 32.5295 38.9629C32.5295 40.9396 33.3148 42.8354 34.7126 44.2332C36.1103 45.6309 38.0061 46.4162 39.9829 46.4162Z"
+                        fill="#11A3AE" />
+                </svg>
+            </div>
 
-        <!-- 
-        
-        <section id="skills" class="section">Minhas Skills</section> -->
-    </body>
-    </html>
+            <div class="skill">
+                <svg viewBox="0 -183.5 512 512" xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                    preserveAspectRatio="xMinYMin meet" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g fill="#83CD29">
+                            <path
+                                d="M471.05 51.611c-1.244 0-2.454.257-3.525.863l-33.888 19.57c-2.193 1.264-3.526 3.65-3.526 6.189v39.069c0 2.537 1.333 4.92 3.526 6.187l8.85 5.109c4.3 2.119 5.885 2.086 7.842 2.086 6.366 0 10.001-3.863 10.001-10.576V81.542c0-.545-.472-.935-1.007-.935h-4.245c-.544 0-1.007.39-1.007.935v38.566c0 2.975-3.1 5.968-8.13 3.453l-9.21-5.396c-.326-.177-.576-.49-.576-.863v-39.07c0-.37.247-.747.576-.935L470.547 57.8a.998.998 0 0 1 1.007 0l33.817 19.498c.322.194.576.553.576.936v39.069c0 .373-.188.755-.504.935l-33.889 19.498c-.29.173-.69.173-1.007 0l-8.706-5.18a.905.905 0 0 0-.863 0c-2.403 1.362-2.855 1.52-5.109 2.302-.555.194-1.398.495.288 1.44l11.368 6.69a6.995 6.995 0 0 0 3.526.936 6.949 6.949 0 0 0 3.525-.935l33.889-19.499c2.193-1.275 3.525-3.65 3.525-6.187v-39.07c0-2.538-1.332-4.92-3.525-6.187l-33.889-19.57c-1.062-.607-2.28-.864-3.525-.864z">
+                            </path>
+                            <path
+                                d="M480.116 79.528c-9.65 0-15.397 4.107-15.397 10.937 0 7.408 5.704 9.444 14.966 10.36 11.08 1.085 11.943 2.712 11.943 4.893 0 3.783-3.016 5.396-10.144 5.396-8.957 0-10.925-2.236-11.584-6.691-.078-.478-.447-.864-.936-.864h-4.389c-.54 0-1.007.466-1.007 1.008 0 5.703 3.102 12.447 17.916 12.447 10.723 0 16.908-4.209 16.908-11.584 0-7.31-4.996-9.273-15.398-10.648-10.51-1.391-11.512-2.072-11.512-4.533 0-2.032.85-4.75 8.634-4.75 6.954 0 9.524 1.5 10.577 6.189.092.44.48.791.935.791h4.39c.27 0 .532-.166.719-.36.184-.207.314-.44.288-.719-.68-8.074-6.064-11.872-16.909-11.872z">
+                            </path>
+                        </g>
+                        <path
+                            d="M271.821.383a2.181 2.181 0 0 0-1.08.287 2.18 2.18 0 0 0-1.079 1.871v55.042c0 .54-.251 1.024-.719 1.295a1.501 1.501 0 0 1-1.511 0l-8.994-5.18a4.31 4.31 0 0 0-4.317 0l-35.903 20.721c-1.342.775-2.158 2.264-2.158 3.814v41.443c0 1.548.817 2.966 2.158 3.741l35.903 20.722a4.3 4.3 0 0 0 4.317 0l35.903-20.722a4.308 4.308 0 0 0 2.159-3.741V16.356a4.386 4.386 0 0 0-2.23-3.814L272.9.598c-.335-.187-.707-.22-1.079-.215zM40.861 52.115c-.684.027-1.328.147-1.942.503L3.015 73.34a4.3 4.3 0 0 0-2.158 3.741L.929 132.7c0 .773.399 1.492 1.079 1.87a2.096 2.096 0 0 0 2.159 0l21.297-12.231c1.349-.802 2.23-2.196 2.23-3.742V92.623c0-1.55.815-2.972 2.159-3.742l9.065-5.252a4.251 4.251 0 0 1 2.159-.576c.74 0 1.5.185 2.158.576l9.066 5.252a4.296 4.296 0 0 1 2.159 3.742v25.973c0 1.546.89 2.95 2.23 3.742l21.297 12.232a2.096 2.096 0 0 0 2.159 0 2.164 2.164 0 0 0 1.08-1.871l.07-55.618a4.28 4.28 0 0 0-2.158-3.741L43.235 52.618c-.607-.356-1.253-.475-1.942-.503h-.432zm322.624.503c-.75 0-1.485.19-2.158.576l-35.903 20.722a4.306 4.306 0 0 0-2.159 3.741V119.1c0 1.559.878 2.971 2.23 3.742l35.616 20.29c1.315.75 2.921.807 4.245.07l21.585-12.015c.685-.38 1.148-1.09 1.151-1.87a2.126 2.126 0 0 0-1.079-1.871l-36.119-20.722c-.676-.386-1.151-1.167-1.151-1.943v-12.95c0-.775.48-1.485 1.151-1.871l11.224-6.476a2.155 2.155 0 0 1 2.159 0L375.5 89.96a2.152 2.152 0 0 1 1.08 1.87v10.217a2.15 2.15 0 0 0 1.079 1.87c.673.389 1.487.39 2.158 0L401.331 91.4a4.325 4.325 0 0 0 2.159-3.742v-10c0-1.545-.82-2.966-2.159-3.742l-35.687-20.722a4.279 4.279 0 0 0-2.159-.575zm-107.35 30.939c.188 0 .408.046.576.143l12.304 7.123c.334.193.576.55.576.935v14.246c0 .387-.24.743-.576.936l-12.304 7.123a1.088 1.088 0 0 1-1.079 0l-12.303-7.123c-.335-.194-.576-.549-.576-.936V91.758c0-.386.242-.74.576-.935l12.303-7.122a.948.948 0 0 1 .504-.143v-.001z"
+                            fill="#11A3AE"></path>
+                        <path
+                            d="M148.714 52.402c-.748 0-1.488.19-2.158.576l-35.903 20.65c-1.343.773-2.159 2.265-2.159 3.813v41.443c0 1.55.817 2.966 2.159 3.742l35.903 20.721a4.297 4.297 0 0 0 4.317 0l35.903-20.721a4.308 4.308 0 0 0 2.158-3.742V77.441c0-1.55-.816-3.04-2.158-3.813l-35.903-20.65a4.297 4.297 0 0 0-2.159-.576zM363.413 89.385c-.143 0-.302 0-.431.072l-6.907 4.029a.84.84 0 0 0-.432.72v7.914c0 .298.172.571.432.72l6.907 3.957c.259.15.535.15.791 0l6.907-3.958a.846.846 0 0 0 .432-.719v-7.915a.846.846 0 0 0-.432-.719l-6.907-4.03c-.128-.075-.216-.07-.36-.07z"
+                            fill="#83CD29"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="skill">
+                <svg viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" width="60" height="60"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#11A3AE">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g>
+                            <polygon fill=" width=" 80"="" height="80" "="" transform=" translate(128.000000,
+                                128.000000) scale(1, -1) translate(-128.000000, -128.000000) " points=" 0 128 0 0 128 0
+                                256 0 256 128 256 256 128 256 0 256"> </polygon>
+                            <path
+                                d="M146.658132,223.436863 L146.739401,212.953054 L130.079084,212.953054 L113.418767,212.953054 L113.418767,165.613371 L113.418767,118.273689 L101.63464,118.273689 L89.8505126,118.273689 L89.8505126,165.613371 L89.8505126,212.953054 L73.1901951,212.953054 L56.5298776,212.953054 L56.5298776,223.233689 C56.5298776,228.922577 56.6517824,233.676863 56.8143221,233.798768 C56.9362269,233.961308 77.2130522,234.042577 101.797179,234.001943 L146.536227,233.880038 L146.658132,223.436863 Z"
+                                fill="#FFFFFF"
+                                transform="translate(101.634640, 176.142993) rotate(-180.000000) translate(-101.634640, -176.142993) ">
+                            </path>
+                            <path
+                                d="M206.566631,234.272145 C213.068219,232.646748 218.025679,229.761668 222.57679,225.048018 C224.933616,222.528653 228.428219,217.936907 228.712663,216.839764 C228.793933,216.514684 217.659965,209.037859 210.914568,204.852462 C210.670758,204.689922 209.69552,205.74643 208.598377,207.371827 C205.306949,212.166748 201.852981,214.239129 196.570441,214.604843 C188.809171,215.133097 183.811076,211.069605 183.851711,204.283573 C183.851711,202.292462 184.136155,201.114049 184.948854,199.488653 C186.65552,195.953414 189.825044,193.840399 199.7806,189.533097 C218.106949,181.649922 225.949489,176.448653 230.825679,169.053097 C236.270758,160.804208 237.489806,147.638494 233.792028,137.845478 C229.728536,127.199129 219.651076,119.966113 205.469489,117.568653 C201.080917,116.796589 190.678377,116.918494 185.964727,117.771827 C175.684092,119.600399 165.931711,124.679764 159.917743,131.343891 C157.560917,133.944526 152.969171,140.730557 153.253616,141.218176 C153.37552,141.380716 154.432028,142.030875 155.610441,142.721668 C156.748219,143.371827 161.05552,145.850557 165.119012,148.207383 L172.473933,152.474049 L174.01806,150.198494 C176.171711,146.907065 180.885362,142.396589 183.729806,140.893097 C191.897425,136.585795 203.112663,137.195319 208.639012,142.15278 C210.995838,144.30643 211.971076,146.541351 211.971076,149.83278 C211.971076,152.799129 211.605362,154.099446 210.061235,156.334367 C208.070123,159.178811 204.006631,161.576272 192.466314,166.574367 C179.259965,172.263256 173.571076,175.798494 168.369806,181.406113 C165.362822,184.656907 162.518377,189.858176 161.339965,194.206113 C160.364727,197.822621 160.120917,206.884208 160.892981,210.541351 C163.61552,223.300716 173.245996,232.199764 187.143139,234.841034 C191.653616,235.694367 202.137425,235.369287 206.566631,234.272145 Z"
+                                fill="#FFFFFF"
+                                transform="translate(194.578507, 176.190240) scale(1, -1) translate(-194.578507, -176.190240) ">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="skill">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="70" height="70"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0164 2C10.8193 2 9.03825 3.72453 9.03825 5.85185V8.51852H15.9235V9.25926H5.97814C3.78107 9.25926 2 10.9838 2 13.1111L2 18.8889C2 21.0162 3.78107 22.7407 5.97814 22.7407H8.27322V19.4815C8.27322 17.3542 10.0543 15.6296 12.2514 15.6296H19.5956C21.4547 15.6296 22.9617 14.1704 22.9617 12.3704V5.85185C22.9617 3.72453 21.1807 2 18.9836 2H13.0164ZM12.0984 6.74074C12.8589 6.74074 13.4754 6.14378 13.4754 5.40741C13.4754 4.67103 12.8589 4.07407 12.0984 4.07407C11.3378 4.07407 10.7213 4.67103 10.7213 5.40741C10.7213 6.14378 11.3378 6.74074 12.0984 6.74074Z" fill="url(#paint0_linear_87_8204)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9834 30C21.1805 30 22.9616 28.2755 22.9616 26.1482V23.4815L16.0763 23.4815L16.0763 22.7408L26.0217 22.7408C28.2188 22.7408 29.9998 21.0162 29.9998 18.8889V13.1111C29.9998 10.9838 28.2188 9.25928 26.0217 9.25928L23.7266 9.25928V12.5185C23.7266 14.6459 21.9455 16.3704 19.7485 16.3704L12.4042 16.3704C10.5451 16.3704 9.03809 17.8296 9.03809 19.6296L9.03809 26.1482C9.03809 28.2755 10.8192 30 13.0162 30H18.9834ZM19.9015 25.2593C19.1409 25.2593 18.5244 25.8562 18.5244 26.5926C18.5244 27.329 19.1409 27.9259 19.9015 27.9259C20.662 27.9259 21.2785 27.329 21.2785 26.5926C21.2785 25.8562 20.662 25.2593 19.9015 25.2593Z" fill="url(#paint1_linear_87_8204)"></path> <defs> <linearGradient id="paint0_linear_87_8204" x1="12.4809" y1="2" x2="12.4809" y2="22.7407" gradientUnits="userSpaceOnUse"> <stop stop-color="#327EBD"></stop> <stop offset="1" stop-color="#1565A7"></stop> </linearGradient> <linearGradient id="paint1_linear_87_8204" x1="19.519" y1="9.25928" x2="19.519" y2="30" gradientUnits="userSpaceOnUse"> <stop stop-color="#FFDA4B"></stop> <stop offset="1" stop-color="#F9C600"></stop> </linearGradient> </defs> </g></svg>
+            </div>
+
+            <div class="skill">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_mysql</title><path d="M8.785,6.865a3.055,3.055,0,0,0-.785.1V7h.038a6.461,6.461,0,0,0,.612.785c.154.306.288.611.441.917.019-.019.038-.039.038-.039a1.074,1.074,0,0,0,.4-.957,4.314,4.314,0,0,1-.23-.4c-.115-.191-.364-.287-.517-.44" style="fill:#11A3AE;fill-rule:evenodd"></path><path d="M27.78,23.553a8.849,8.849,0,0,0-3.712.536c-.287.115-.745.115-.785.478.154.153.172.4.307.613a4.467,4.467,0,0,0,.995,1.167c.4.306.8.611,1.225.879.745.461,1.588.728,2.314,1.187.422.268.842.612,1.264.9.21.153.343.4.611.5v-.058a3.844,3.844,0,0,0-.291-.613c-.191-.19-.383-.363-.575-.554a9.118,9.118,0,0,0-1.99-1.932c-.613-.422-1.953-1-2.2-1.7l-.039-.039a7.69,7.69,0,0,0,1.321-.308c.65-.172,1.243-.133,1.912-.3.307-.077.862-.268.862-.268v-.3c-.342-.34-.587-.795-.947-1.116a25.338,25.338,0,0,0-3.122-2.328c-.587-.379-1.344-.623-1.969-.946-.226-.114-.6-.17-.737-.36a7.594,7.594,0,0,1-.776-1.457c-.548-1.04-1.079-2.193-1.551-3.293a20.236,20.236,0,0,0-.965-2.157A19.078,19.078,0,0,0,11.609,5a9.07,9.07,0,0,0-2.421-.776c-.474-.02-.946-.057-1.419-.075A7.55,7.55,0,0,1,6.9,3.485C5.818,2.8,3.038,1.328,2.242,3.277,1.732,4.508,3,5.718,3.435,6.343A8.866,8.866,0,0,1,4.4,7.762c.133.322.171.663.3,1A22.556,22.556,0,0,0,5.687,11.3a8.946,8.946,0,0,0,.7,1.172c.153.209.417.3.474.645a5.421,5.421,0,0,0-.436,1.419,8.336,8.336,0,0,0,.549,6.358c.3.473,1.022,1.514,1.987,1.116.851-.34.662-1.419.908-2.364.056-.229.019-.379.132-.53V19.3s.483,1.061.723,1.6a10.813,10.813,0,0,0,2.4,2.59A3.514,3.514,0,0,1,14,24.657V25h.427A1.054,1.054,0,0,0,14,24.212a9.4,9.4,0,0,1-.959-1.16,24.992,24.992,0,0,1-2.064-3.519c-.3-.6-.553-1.258-.793-1.857-.11-.231-.11-.58-.295-.7a7.266,7.266,0,0,0-.884,1.313,11.419,11.419,0,0,0-.517,2.921c-.073.02-.037,0-.073.038-.589-.155-.792-.792-1.014-1.332a8.756,8.756,0,0,1-.166-5.164c.128-.405.683-1.681.461-2.068-.111-.369-.48-.58-.682-.871a7.767,7.767,0,0,1-.663-1.237C5.912,9.5,5.69,8.3,5.212,7.216a10.4,10.4,0,0,0-.921-1.489A9.586,9.586,0,0,1,3.276,4.22c-.092-.213-.221-.561-.074-.793a.3.3,0,0,1,.259-.252c.238-.212.921.058,1.16.174a9.2,9.2,0,0,1,1.824.967c.258.194.866.685.866.685h.18c.612.133,1.3.037,1.876.21a12.247,12.247,0,0,1,2.755,1.32,16.981,16.981,0,0,1,5.969,6.545c.23.439.327.842.537,1.3.4.94.9,1.9,1.3,2.814a12.578,12.578,0,0,0,1.36,2.564c.286.4,1.435.612,1.952.822a13.7,13.7,0,0,1,1.32.535c.651.4,1.3.861,1.913,1.3.305.23,1.262.708,1.32,1.091" style="fill:#11A3AE;fill-rule:evenodd"></path></g></svg>
+            </div>
+
+            <div class="skill">
+                <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" width="70" height="70" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>github [#11A3AE]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#11A3AE"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#11A3AE]"> </path> </g> </g> </g> </g></svg>
+            </div>
+        </div>
+
+    </section>
+</div>
+<footer>
+        <div class="footer-content">
+            <p>Desenvolvido por <a href="https://www.instagram.com/lucasletzel_/" target="_blank">Lucas Letzel</a></p>
+    </footer>
+</body>
+    
+<script src="particles.js"></script>
+
+</html>
