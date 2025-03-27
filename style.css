@@ -33,12 +33,12 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    z-index: -1; /* Para ficar atrás de todo o conteúdo */
-    background-color: var(--background-color); /* Mesma cor do seu body */
+    z-index: -1; 
+    background-color: var(--background-color); 
 }
 
 .container-content{
-    padding-top: 80px; /* Ajuste este valor de acordo com a altura do seu header */
+    padding-top: 80px; 
     position: relative;
     z-index: 1;
     display: flex;
@@ -61,7 +61,7 @@ header {
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Classe para esconder o header quando rolar para baixo */
+
 .header-hidden {
     transform: translateY(-100%);
 }
@@ -326,7 +326,7 @@ h1 {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px; /* 177.778% */
+    line-height: 32px;
     width: 80%;
 }
 

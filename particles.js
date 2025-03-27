@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Adicione ao final do arquivo particles.js
+
 document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
         threshold: 0.1
     });
 
-    // Observe todas as seções principais
+
     document.querySelectorAll('.section-sobre, .section-projetos, .section-servicos, .section-minhasskills').forEach((section) => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(20px)';
@@ -127,15 +127,15 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 
-    // Adicione o código de rolagem suave
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             
-            // Fechar o menu mobile se estiver aberto
+
             document.getElementById('menu-toggle').checked = false;
 
-            // Rolar suavemente até a seção
+
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
             
@@ -149,12 +149,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Fechar menu ao clicar no overlay
+
     document.querySelector('.overlay').addEventListener('click', function() {
         document.getElementById('menu-toggle').checked = false;
     });
 
-    // Fechar menu ao clicar no botão fechar
+
     document.querySelector('.close-btn').addEventListener('click', function() {
         document.getElementById('menu-toggle').checked = false;
     });
